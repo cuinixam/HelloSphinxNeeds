@@ -1,0 +1,22 @@
+{
+  "variant": {
+    "choices": {"Flv1/Sys1": {
+        "buildType": "Flv1_Sys1",
+        "long": "select to build variant 'Flv1/Sys1'",
+        "settings": {
+          "FLAVOR": "Flv1",
+          "SUBSYSTEM": "Sys1"
+        },
+        "short": "Flv1/Sys1"
+      }, "Flv1/Sys2": {
+        "buildType": "Flv1_Sys2",
+        "long": "select to build variant 'Flv1/Sys2'",
+        "settings": {
+          "FLAVOR": "Flv1",
+          "SUBSYSTEM": "Sys2"
+        },
+        "short": "Flv1/Sys2"
+      }},
+    "default": "Flv1/Sys1"
+  }
+}
