@@ -1,5 +1,7 @@
 # Binary output dir, not recommended to push binary results to Git.
-/build
+html
+test
+build/modules
 
 # Output directory of test results
 /test/output

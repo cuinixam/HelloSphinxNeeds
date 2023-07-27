@@ -1,5 +1,5 @@
-Welcome to Component documentation
-##################################
+Index in component directory
+############################
 
 .. toctree::
    :maxdepth: 1

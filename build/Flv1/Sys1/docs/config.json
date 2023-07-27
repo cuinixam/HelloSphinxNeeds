@@ -1,0 +1,6 @@
+{
+    "build_docs_dir": "build/Flv1/Sys1/docs",
+    "component_docs_dir": "components/component/doc",
+    "component_test_dir": "build/Flv1/Sys1/test",
+    "entities": ["classA", "classB", "classC"]
+}
