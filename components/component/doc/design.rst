@@ -5,7 +5,6 @@ Design
 
 
 .. spec:: First design ID for my component
-
    :id: S_001
    :version: 1.0
 

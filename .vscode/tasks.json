@@ -8,6 +8,12 @@
             "problemMatcher": []
         },
         {
+            "label": "Generate doxygen",
+            "type": "shell",
+            "command": "doxygen build/Flv1/Sys1/docs/Doxyfile",
+            "problemMatcher": []
+        },
+        {
             "label": "Get mandatory tools",
             "detail": "Installation of mandatory tools",
             "type": "shell",

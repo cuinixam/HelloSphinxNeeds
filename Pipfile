@@ -12,6 +12,7 @@ kconfiglib = "*"
 pytest = "*"
 pipenv = "*"
 sphinx-test-reports = "*"
+doxysphinx = "*"
 
 [dev-packages]
 flake8 = "*"

@@ -2,6 +2,8 @@
 html
 test
 build/modules
+doxygen
+prod
 
 # Output directory of test results
 /test/output
