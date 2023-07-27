@@ -28,6 +28,35 @@ extensions.append("sphinxcontrib.mermaid")
 # sphinx_needs
 extensions.append("sphinx_needs")
 
+
+# needs_types - this option allows the setup of own need types like bugs, user_stories and more.
+
+needs_types = [
+    dict(directive="req", title="Requirement", prefix="R_", color="#BFD8D2", style="node"),
+    dict(directive="spec", title="Specification", prefix="S_", color="#FEDCD2", style="node"),
+    dict(directive="impl", title="Implementation", prefix="I_", color="#DF744A", style="node"),
+    dict(directive="test", title="Test Case", prefix="T_", color="#DCB239", style="node"),
+
+    # Kept for backwards compatibility
+    dict(directive="need", title="Need", prefix="N_", color="#9856a5", style="node"),
+    dict(directive="image", title="Image", prefix="IMG_", color="#FFCC00", style="node"),
+]
+
+# Define own options
+needs_extra_options = ["integrity", "assignee", "version"]
+
+# Define own link types
+
+needs_extra_links = [
+    {"option": "checks", "incoming": "is checked by", "outgoing": "checks"},
+    {"option": "implements", "incoming": "is implemented by", "outgoing": "implements"},
+    {"option": "tests", "incoming": "is tested by", "outgoing": "tests requirement(s)"},
+    {"option": "results", "incoming": "is resulted from", "outgoing": "test results"},
+    {"option": "requirement", "incoming": "specification", "outgoing": "requirement"},
+    {"option": "specified", "incoming": "tested by", "outgoing": "specified by"},
+]
+
+
 # sphinxcontrib-test-reports
 extensions.append("sphinxcontrib.test_reports")
 tr_report_template = "doc/test_report_template.txt"

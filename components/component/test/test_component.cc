@@ -8,6 +8,16 @@ extern "C"
 
 #include "mockup_components_component.h"
 
+
+/*!
+* @rst
+*
+* .. test:: test_someInterfaceOfComponent
+*    :specified: S_001
+*    Some test specification
+*
+* @endrst
+*/
 TEST(component, test_someInterfaceOfComponent)
 {
     /* mock all external dependencies of component */
