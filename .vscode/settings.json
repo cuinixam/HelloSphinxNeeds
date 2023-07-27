@@ -25,10 +25,6 @@
     },
     "cmake.configureOnEdit": false,
     "cmake.buildBeforeRun": false,
-    "cmake.environment": {
-        "SPLCORE_PATH": "d:/ateliere/spl-core"
-    },
-    },
     "cmake.buildToolArgs": [],
     "git.ignoreLimitWarning": true,
     "C_Cpp.errorSquiggles": "enabled",

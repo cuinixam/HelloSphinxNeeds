@@ -5,3 +5,4 @@ Index in build directory
    
    /{{ component_docs_dir }}/index
    test_results
+   doxygen/html/index

@@ -8,12 +8,19 @@ extern "C"
 
 #include "mockup_components_component.h"
 
+/*! \mainpage
+ *
+ * TODO: table of tests
+ */
+
 
 /*!
 * @rst
 *
 * .. test:: test_someInterfaceOfComponent
+*    :id: T_001
 *    :specified: S_001
+*
 *    Some test specification
 *
 * @endrst
