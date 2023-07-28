@@ -69,6 +69,25 @@ source_suffix = [".rst"]
 
 html_theme = "sphinx_rtd_theme"
 
+# Hide hyper link which leeds to the source of page displayed
+html_show_sourcelink = True
+
+html_theme_options = {
+    "canonical_url": "",
+    "analytics_id": "",  #  Provided by Google in your dashboard
+    "display_version": True,
+    "prev_next_buttons_location": "bottom",
+    "style_external_links": True,
+    "logo_only": False,
+    "style_nav_header_background": "white",
+    # Toc options
+    "collapse_navigation": True,
+    "sticky_navigation": True,
+    "navigation_depth": 6,
+    "includehidden": True,
+    "titles_only": False,
+}
+
 def rstjinja(app, docname, source):
     """
     Render our pages as a jinja template for fancy templating goodness.

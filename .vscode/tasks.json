@@ -16,7 +16,7 @@
         {
             "label": "Generate doxysphinx",
             "type": "shell",
-            "command": "doxysphinx build . build/Flv1/Sys1/docs build/Flv1/Sys1/docs/doxygen/html",
+            "command": "pipenv run doxysphinx build . build/Flv1/Sys1/docs/html build/Flv1/Sys1/docs/Doxyfile",
             "problemMatcher": []
         },
         {
@@ -30,6 +30,11 @@
               "kind": "build",
               "isDefault": false
             }
+        },
+        {
+            "label": "Generate and open docs",
+            "dependsOrder": "sequence",
+            "dependsOn": ["Generate doxygen", "Generate doxysphinx", "Generate documentation", "open docs index.html"]
         },
         {
             "label": "Get mandatory tools",
